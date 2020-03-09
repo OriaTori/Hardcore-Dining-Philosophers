@@ -2,10 +2,7 @@
 #include <mutex>
 #include <vector>
 #include "Philosopher.hpp"
-
-struct Fork {
-   std::mutex mutex;
-};
+#include "Fork.hpp"
 
 struct Table {
     std::vector<Fork> forks;
