@@ -1,8 +1,18 @@
 #pragma once
 #include <mutex>
+#include <vector>
+#include "Philosopher.hpp"
 
 struct Fork {
-    std::mutex fork;
+   std::mutex mutex;
 };
 
-class Table {};
+struct Table {
+    std::vector<Fork> forks;
+    std::vector<Philosopher> pilosophers;
+
+    Table();
+    ~Table();
+
+    void registerPhilosopher(Philosopher& p);
+};
