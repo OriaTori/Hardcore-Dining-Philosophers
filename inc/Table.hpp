@@ -8,7 +8,7 @@
 struct Table {
     Log log_;
     std::vector<Fork> forks;
-    std::vector<Philosopher> pilosophers;
+    std::vector<Philosopher> philosophers;
 
     Table(Log& log);
     ~Table();
