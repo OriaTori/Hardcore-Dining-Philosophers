@@ -1,5 +1,4 @@
 #include "Philosopher.hpp"
 
-Philosopher::Philosopher(Book& book, Table& table) :
-    book_(book),
-    table_(table) {}
+Philosopher::Philosopher(Book& book) :
+    book_(book) {}
