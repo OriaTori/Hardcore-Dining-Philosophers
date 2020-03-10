@@ -10,6 +10,6 @@ file(GLOB SOURCES
 )
 
 add_executable(HardcoreDP ${SOURCES})
-target_link_libraries(HardcoreDP pthread)
+target_link_libraries(HardcoreDP tbb pthread)
 target_include_directories(HardcoreDP PRIVATE inc/)
-target_compile_options(HardcoreDP PRIVATE -Wall -Werror -Wpedantic -Wextra)
+target_compile_options(HardcoreDP PRIVATE -Wall -Werror -Wpedantic -Wextra -fopenmp)
